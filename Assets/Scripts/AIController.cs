@@ -18,17 +18,19 @@ public class AIController : MonoBehaviour
 		runner = GetComponent<Runner>();
 		speed = Random.Range(minSpeed, maxSpeed);
 		canRunTimer = 0f;
-		canRun = true;
 	}
 
 	private void Update()
 	{
 		canRunTimer -= Time.deltaTime;
 
-		if (canRunTimer <= 0f)
+		if (GameManager.Instance.HasRaceStarted == true && runner.HasFinishedRacing == false)
 		{
-			canRun = true;
-			canRunTimer = Random.Range(minRunTimer, maxRunTimer);
+			if (canRunTimer <= 0f)
+			{
+				canRun = true;
+				canRunTimer = Random.Range(minRunTimer, maxRunTimer);
+			}
 		}
 	}
 

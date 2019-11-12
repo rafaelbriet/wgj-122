@@ -4,12 +4,31 @@ using UnityEngine;
 
 public class Runner : MonoBehaviour
 {
+	public float RaceTime;
+	public bool HasFinishedRacing;
+
 	private Rigidbody rb;
 	private bool run;
 
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody>();
+		RaceTime = 0;
+		GameManager.Instance.Runners.Add(this);
+		HasFinishedRacing = false;
+	}
+
+	private void Update()
+	{
+		if (transform.position.x > GameManager.Instance.RaceLength)
+		{
+			HasFinishedRacing = true;
+		}
+
+		if (GameManager.Instance.HasRaceStarted == true && HasFinishedRacing == false)
+		{
+			RaceTime += Time.deltaTime;
+		}
 	}
 
 	public void Run(float speed)
