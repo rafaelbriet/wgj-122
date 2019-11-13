@@ -7,7 +7,7 @@ public class Runner : MonoBehaviour
 	public float RaceTime;
 	public bool HasFinishedRacing;
 
-	private Rigidbody rb;
+	public Rigidbody rb { get; private set; }
 	private bool run;
 
 	private void Start()
