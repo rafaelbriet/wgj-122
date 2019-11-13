@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: a4e9236cd98d2d04f8f13029d221d1cf
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Players
+  fontNames:
+  - Players
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 265b73c3bea92e949bb97e79afab680d, type: 3}
+  - {fileID: 12800000, guid: 464ceb68f7024204c9511e42cbf25d94, type: 3}
+  - {fileID: 12800000, guid: 775abf4a64aff8142b52f3451e485827, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

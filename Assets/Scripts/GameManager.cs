@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
 	public int RaceLength = 100;
 	public List<Runner> Runners = new List<Runner>();
 
+	[SerializeField] private Camera mainCamera;
+	[SerializeField] private Camera menuCamera;
+
 	private EnviromentAudioController enviromentAudioController;
 
 	private void Awake()
@@ -28,12 +31,18 @@ public class GameManager : MonoBehaviour
 	private void Start()
 	{
 		enviromentAudioController = FindObjectOfType<EnviromentAudioController>();
+
+		mainCamera.gameObject.SetActive(false);
+		menuCamera.gameObject.SetActive(true);
 	}
 
 	private void Update()
 	{
 		if (StartCountdown == true)
 		{
+			mainCamera.gameObject.SetActive(true);
+			menuCamera.gameObject.SetActive(false);
+
 			if (HasRaceStarted == false)
 			{
 				RaceStartTimer -= Time.deltaTime;
@@ -43,7 +52,13 @@ public class GameManager : MonoBehaviour
 					HasRaceStarted = true;
 				}
 			}
-		}	
+		}
+
+		if (HasRaceEnded() == true)
+		{
+			mainCamera.gameObject.SetActive(false);
+			menuCamera.gameObject.SetActive(true);
+		}
 	}
 
 	public void RestartGame()
@@ -61,6 +76,9 @@ public class GameManager : MonoBehaviour
 
 		enviromentAudioController.cannonSoundplayed = false;
 		enviromentAudioController.applauseSoundplayed = false;
+
+		mainCamera.gameObject.SetActive(true);
+		menuCamera.gameObject.SetActive(false);
 	}
 
 	public bool HasRaceEnded()

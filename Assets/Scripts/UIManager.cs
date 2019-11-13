@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI countdownText;
 	[SerializeField] private TextMeshProUGUI raceTimeText;
 	[SerializeField] private TextMeshProUGUI raceTimeFinalText;
+	[SerializeField] private TextMeshProUGUI newRecordText;
 
 	[SerializeField] private GameObject raceScreen;
 	[SerializeField] private GameObject mainMenu;
@@ -39,6 +40,9 @@ public class UIManager : MonoBehaviour
 		{
 			UIEndrace();
 		}
+
+		newRecordText.CrossFadeAlpha(0, 0.1f, false);
+		newRecordText.CrossFadeAlpha(1, 0.1f, false);
 	}
 
 	public void UIStartRace()
