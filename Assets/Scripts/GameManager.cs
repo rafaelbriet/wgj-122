@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 	public int RaceLength = 100;
 	public List<Runner> Runners = new List<Runner>();
 
+	private EnviromentAudioController enviromentAudioController;
+
 	private void Awake()
 	{
 		if (Instance == null)
@@ -21,6 +23,11 @@ public class GameManager : MonoBehaviour
 
 		HasRaceStarted = false;
 		StartCountdown = false;
+	}
+
+	private void Start()
+	{
+		enviromentAudioController = FindObjectOfType<EnviromentAudioController>();
 	}
 
 	private void Update()
@@ -51,6 +58,9 @@ public class GameManager : MonoBehaviour
 			runner.HasFinishedRacing = false;
 			runner.transform.position = new Vector3(0, 0, runner.transform.position.z);
 		}
+
+		enviromentAudioController.cannonSoundplayed = false;
+		enviromentAudioController.applauseSoundplayed = false;
 	}
 
 	public bool HasRaceEnded()
