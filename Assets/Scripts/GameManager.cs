@@ -53,6 +53,11 @@ public class GameManager : MonoBehaviour
 				}
 			}
 		}
+		else
+		{
+			mainCamera.gameObject.SetActive(false);
+			menuCamera.gameObject.SetActive(true);
+		}
 
 		if (HasRaceEnded() == true)
 		{
