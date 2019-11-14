@@ -798,6 +798,7 @@ GameObject:
   - component: {fileID: 180343720}
   - component: {fileID: 180343719}
   - component: {fileID: 180343724}
+  - component: {fileID: 180343725}
   m_Layer: 0
   m_Name: Runner (1)
   m_TagString: Untagged
@@ -892,6 +893,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2b7a7e87301eb4ea1b8c5da09af662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &180343725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180343718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00011e1f9cc5564ca38f9853894e357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothColors:
+  - {r: 0.05882353, g: 0.64705884, b: 0.4117647, a: 0}
+  - {r: 0.078431375, g: 0.27450982, b: 0.3529412, a: 0}
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.84313726, g: 0.1764706, b: 0.1764706, a: 0}
+  - {r: 0.64705884, g: 0.74509805, b: 0.8039216, a: 0}
+  - {r: 0.078431375, g: 0.4117647, b: 0.7647059, a: 0}
+  - {r: 0.05882353, g: 0.19607843, b: 0.13725491, a: 0}
+  - {r: 0.3529412, g: 0.078431375, b: 0.13725491, a: 0}
+  hairColors:
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.9019608, g: 0.43137255, b: 0.27450982, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.20754719, g: 0.14533061, b: 0.12433251, a: 0}
+  skinColors:
+  - {r: 1, g: 0.8039216, b: 0.7058824, a: 0}
+  - {r: 0.9607843, g: 0.64705884, b: 0.43137255, a: 0}
+  - {r: 0.8627451, g: 0.60784316, b: 0.47058824, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.54901963, g: 0.23529412, b: 0.19607843, a: 0}
+  - {r: 0.21568628, g: 0.039215688, b: 0.078431375, a: 0}
 --- !u!1001 &226233911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2244,6 +2278,7 @@ GameObject:
   - component: {fileID: 811500357}
   - component: {fileID: 811500356}
   - component: {fileID: 811500361}
+  - component: {fileID: 811500362}
   m_Layer: 0
   m_Name: Runner (3)
   m_TagString: Untagged
@@ -2338,6 +2373,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2b7a7e87301eb4ea1b8c5da09af662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &811500362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811500355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00011e1f9cc5564ca38f9853894e357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothColors:
+  - {r: 0.05882353, g: 0.64705884, b: 0.4117647, a: 0}
+  - {r: 0.078431375, g: 0.27450982, b: 0.3529412, a: 0}
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.84313726, g: 0.1764706, b: 0.1764706, a: 0}
+  - {r: 0.64705884, g: 0.74509805, b: 0.8039216, a: 0}
+  - {r: 0.078431375, g: 0.4117647, b: 0.7647059, a: 0}
+  - {r: 0.05882353, g: 0.19607843, b: 0.13725491, a: 0}
+  - {r: 0.3529412, g: 0.078431375, b: 0.13725491, a: 0}
+  hairColors:
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.9019608, g: 0.43137255, b: 0.27450982, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.20754719, g: 0.14533061, b: 0.12433251, a: 0}
+  skinColors:
+  - {r: 1, g: 0.8039216, b: 0.7058824, a: 0}
+  - {r: 0.9607843, g: 0.64705884, b: 0.43137255, a: 0}
+  - {r: 0.8627451, g: 0.60784316, b: 0.47058824, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.54901963, g: 0.23529412, b: 0.19607843, a: 0}
+  - {r: 0.21568628, g: 0.039215688, b: 0.078431375, a: 0}
 --- !u!1 &829293836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,6 +2869,7 @@ GameObject:
   - component: {fileID: 950712654}
   - component: {fileID: 950712653}
   - component: {fileID: 950712658}
+  - component: {fileID: 950712659}
   m_Layer: 0
   m_Name: Runner (4)
   m_TagString: Untagged
@@ -2895,6 +2964,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2b7a7e87301eb4ea1b8c5da09af662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &950712659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950712652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00011e1f9cc5564ca38f9853894e357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothColors:
+  - {r: 0.05882353, g: 0.64705884, b: 0.4117647, a: 0}
+  - {r: 0.078431375, g: 0.27450982, b: 0.3529412, a: 0}
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.84313726, g: 0.1764706, b: 0.1764706, a: 0}
+  - {r: 0.64705884, g: 0.74509805, b: 0.8039216, a: 0}
+  - {r: 0.078431375, g: 0.4117647, b: 0.7647059, a: 0}
+  - {r: 0.05882353, g: 0.19607843, b: 0.13725491, a: 0}
+  - {r: 0.3529412, g: 0.078431375, b: 0.13725491, a: 0}
+  hairColors:
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.9019608, g: 0.43137255, b: 0.27450982, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.20754719, g: 0.14533061, b: 0.12433251, a: 0}
+  skinColors:
+  - {r: 1, g: 0.8039216, b: 0.7058824, a: 0}
+  - {r: 0.9607843, g: 0.64705884, b: 0.43137255, a: 0}
+  - {r: 0.8627451, g: 0.60784316, b: 0.47058824, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.54901963, g: 0.23529412, b: 0.19607843, a: 0}
+  - {r: 0.21568628, g: 0.039215688, b: 0.078431375, a: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3392,6 +3494,7 @@ GameObject:
   - component: {fileID: 1329002278}
   - component: {fileID: 1329002277}
   - component: {fileID: 1329002282}
+  - component: {fileID: 1329002283}
   m_Layer: 0
   m_Name: Runner (6)
   m_TagString: Untagged
@@ -3486,6 +3589,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2b7a7e87301eb4ea1b8c5da09af662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1329002283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329002276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00011e1f9cc5564ca38f9853894e357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothColors:
+  - {r: 0.05882353, g: 0.64705884, b: 0.4117647, a: 0}
+  - {r: 0.078431375, g: 0.27450982, b: 0.3529412, a: 0}
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.84313726, g: 0.1764706, b: 0.1764706, a: 0}
+  - {r: 0.64705884, g: 0.74509805, b: 0.8039216, a: 0}
+  - {r: 0.078431375, g: 0.4117647, b: 0.7647059, a: 0}
+  - {r: 0.05882353, g: 0.19607843, b: 0.13725491, a: 0}
+  - {r: 0.3529412, g: 0.078431375, b: 0.13725491, a: 0}
+  hairColors:
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.9019608, g: 0.43137255, b: 0.27450982, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.20754719, g: 0.14533061, b: 0.12433251, a: 0}
+  skinColors:
+  - {r: 1, g: 0.8039216, b: 0.7058824, a: 0}
+  - {r: 0.9607843, g: 0.64705884, b: 0.43137255, a: 0}
+  - {r: 0.8627451, g: 0.60784316, b: 0.47058824, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.54901963, g: 0.23529412, b: 0.19607843, a: 0}
+  - {r: 0.21568628, g: 0.039215688, b: 0.078431375, a: 0}
 --- !u!1 &1390035573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3650,6 +3786,7 @@ GameObject:
   - component: {fileID: 1420774020}
   - component: {fileID: 1420774019}
   - component: {fileID: 1420774024}
+  - component: {fileID: 1420774025}
   m_Layer: 0
   m_Name: Runner (5)
   m_TagString: Untagged
@@ -3744,6 +3881,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2b7a7e87301eb4ea1b8c5da09af662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1420774025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420774018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00011e1f9cc5564ca38f9853894e357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothColors:
+  - {r: 0.05882353, g: 0.64705884, b: 0.4117647, a: 0}
+  - {r: 0.078431375, g: 0.27450982, b: 0.3529412, a: 0}
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.84313726, g: 0.1764706, b: 0.1764706, a: 0}
+  - {r: 0.64705884, g: 0.74509805, b: 0.8039216, a: 0}
+  - {r: 0.078431375, g: 0.4117647, b: 0.7647059, a: 0}
+  - {r: 0.05882353, g: 0.19607843, b: 0.13725491, a: 0}
+  - {r: 0.3529412, g: 0.078431375, b: 0.13725491, a: 0}
+  hairColors:
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.9019608, g: 0.43137255, b: 0.27450982, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.20754719, g: 0.14533061, b: 0.12433251, a: 0}
+  skinColors:
+  - {r: 1, g: 0.8039216, b: 0.7058824, a: 0}
+  - {r: 0.9607843, g: 0.64705884, b: 0.43137255, a: 0}
+  - {r: 0.8627451, g: 0.60784316, b: 0.47058824, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.54901963, g: 0.23529412, b: 0.19607843, a: 0}
+  - {r: 0.21568628, g: 0.039215688, b: 0.078431375, a: 0}
 --- !u!1 &1438241300
 GameObject:
   m_ObjectHideFlags: 0
@@ -4971,6 +5141,7 @@ GameObject:
   - component: {fileID: 1956430871}
   - component: {fileID: 1956430870}
   - component: {fileID: 1956430875}
+  - component: {fileID: 1956430876}
   m_Layer: 0
   m_Name: Runner (2)
   m_TagString: Untagged
@@ -5065,6 +5236,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2b7a7e87301eb4ea1b8c5da09af662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1956430876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956430869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00011e1f9cc5564ca38f9853894e357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothColors:
+  - {r: 0.05882353, g: 0.64705884, b: 0.4117647, a: 0}
+  - {r: 0.078431375, g: 0.27450982, b: 0.3529412, a: 0}
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.84313726, g: 0.1764706, b: 0.1764706, a: 0}
+  - {r: 0.64705884, g: 0.74509805, b: 0.8039216, a: 0}
+  - {r: 0.078431375, g: 0.4117647, b: 0.7647059, a: 0}
+  - {r: 0.05882353, g: 0.19607843, b: 0.13725491, a: 0}
+  - {r: 0.3529412, g: 0.078431375, b: 0.13725491, a: 0}
+  hairColors:
+  - {r: 1, g: 0.9019608, b: 0.3529412, a: 0}
+  - {r: 0.9019608, g: 0.43137255, b: 0.27450982, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.20754719, g: 0.14533061, b: 0.12433251, a: 0}
+  skinColors:
+  - {r: 1, g: 0.8039216, b: 0.7058824, a: 0}
+  - {r: 0.9607843, g: 0.64705884, b: 0.43137255, a: 0}
+  - {r: 0.8627451, g: 0.60784316, b: 0.47058824, a: 0}
+  - {r: 0.69803923, g: 0.38431373, b: 0.2784314, a: 0}
+  - {r: 0.54901963, g: 0.23529412, b: 0.19607843, a: 0}
+  - {r: 0.21568628, g: 0.039215688, b: 0.078431375, a: 0}
 --- !u!1 &2023722048
 GameObject:
   m_ObjectHideFlags: 0
