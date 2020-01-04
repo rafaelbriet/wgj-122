@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private GameObject raceScreen;
 	[SerializeField] private GameObject mainMenu;
 	[SerializeField] private GameObject endMenu;
+	[SerializeField] private GameObject highscoreScreen;
 
 	private Runner player;
 
@@ -57,6 +58,18 @@ public class UIManager : MonoBehaviour
 		countdownText.CrossFadeAlpha(1f, 0, true);
 		endMenu.SetActive(true);
 		raceTimeFinalText.text = player.RaceTime.ToString("F3", CultureInfo.InvariantCulture);
+	}
+
+	public void UIHighscoreScreen()
+	{
+		highscoreScreen.SetActive(true);
+		mainMenu.SetActive(false);
+	}
+
+	public void UIBackHighscore()
+	{
+		mainMenu.SetActive(true);
+		highscoreScreen.SetActive(false);
 	}
 
 	public void MainMenu()
