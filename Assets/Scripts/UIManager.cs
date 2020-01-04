@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private GameObject highscoreTextParent;
 	[SerializeField] private GameObject highscoreTextPrefab;
 	[SerializeField] private GameObject newHighscoreText;
+	[SerializeField] private Camera menuCamera;
 
 	private Runner player;
 	private HighscoreManager highscoreManager;
@@ -81,12 +82,14 @@ public class UIManager : MonoBehaviour
 		UpdateHighscoreDisplay();
 		highscoreScreen.SetActive(true);
 		mainMenu.SetActive(false);
+		menuCamera.orthographicSize = 0.45f;
 	}
 
 	public void UIBackHighscore()
 	{
 		mainMenu.SetActive(true);
 		highscoreScreen.SetActive(false);
+		menuCamera.orthographicSize = 1.5f;
 	}
 
 	public void MainMenu()
