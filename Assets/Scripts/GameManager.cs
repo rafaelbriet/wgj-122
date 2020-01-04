@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private Camera mainCamera;
 	[SerializeField] private Camera menuCamera;
 
+	private Runner player;
 	private EnviromentAudioController enviromentAudioController;
+	private HighscoreManager highscoreManager;
 
 	private void Awake()
 	{
@@ -30,7 +32,9 @@ public class GameManager : MonoBehaviour
 
 	private void Start()
 	{
+		player = FindObjectOfType<PlayerController>().GetComponent<Runner>();
 		enviromentAudioController = FindObjectOfType<EnviromentAudioController>();
+		highscoreManager = FindObjectOfType<HighscoreManager>();
 
 		mainCamera.gameObject.SetActive(false);
 		menuCamera.gameObject.SetActive(true);
@@ -66,8 +70,21 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public void StartGame()
+	{
+		StartCountdown = true;
+	}
+
+	public void EndGame()
+	{
+		StartCountdown = false;
+	}
+
 	public void RestartGame()
 	{
+		highscoreManager.AddHighscore(player.RaceTime);
+		highscoreManager.SaveHighscore();
+
 		HasRaceStarted = false;
 		StartCountdown = false;
 		RaceStartTimer = 3f;
