@@ -20,13 +20,6 @@ public class HighscoreManager : MonoBehaviour
 
 			SaveHighscore();
 		}
-
-		foreach (var item in Highscores)
-		{
-			print(item.Time);
-		}
-
-		PlayerPrefs.DeleteAll();
 	}
 
 	public void AddHighscore(float time)

@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private GameObject highscoreScreen;
 	[SerializeField] private GameObject highscoreTextParent;
 	[SerializeField] private GameObject highscoreTextPrefab;
+	[SerializeField] private GameObject newHighscoreText;
 
 	private Runner player;
 	private HighscoreManager highscoreManager;
@@ -50,7 +51,7 @@ public class UIManager : MonoBehaviour
 
 	public void UIStartRace()
 	{
-		GameManager.Instance.StartCountdown = true;
+		GameManager.Instance.StartGame();
 
 		mainMenu.SetActive(false);
 		raceScreen.SetActive(true);
@@ -58,7 +59,16 @@ public class UIManager : MonoBehaviour
 
 	public void UIEndrace()
 	{
-		GameManager.Instance.StartCountdown = false;
+		GameManager.Instance.EndGame();
+
+		if (player.RaceTime < highscoreManager.Highscores[0].Time)
+		{
+			newHighscoreText.SetActive(true);
+		}
+		else
+		{
+			newHighscoreText.SetActive(false);
+		}
 
 		raceScreen.SetActive(false);
 		countdownText.CrossFadeAlpha(1f, 0, true);
@@ -68,6 +78,7 @@ public class UIManager : MonoBehaviour
 
 	public void UIHighscoreScreen()
 	{
+		UpdateHighscoreDisplay();
 		highscoreScreen.SetActive(true);
 		mainMenu.SetActive(false);
 	}
