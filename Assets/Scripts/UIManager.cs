@@ -14,12 +14,18 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private GameObject mainMenu;
 	[SerializeField] private GameObject endMenu;
 	[SerializeField] private GameObject highscoreScreen;
+	[SerializeField] private GameObject highscoreTextParent;
+	[SerializeField] private GameObject highscoreTextPrefab;
 
 	private Runner player;
+	private HighscoreManager highscoreManager;
 
 	private void Start()
 	{
 		player = FindObjectOfType<PlayerController>().GetComponent<Runner>();
+		highscoreManager = FindObjectOfType<HighscoreManager>();
+
+		UpdateHighscoreDisplay();
 	}
 
 	private void Update()
@@ -93,5 +99,20 @@ public class UIManager : MonoBehaviour
 	public void QuitGame()
 	{
 		Application.Quit();
+	}
+
+	private void UpdateHighscoreDisplay()
+	{
+		foreach (Transform t in highscoreTextParent.transform)
+		{
+			Destroy(t.gameObject);
+		}
+
+		foreach (HighscoreEntry highscore in highscoreManager.Highscores)
+		{
+			GameObject go = Instantiate(highscoreTextPrefab, highscoreTextParent.transform);
+			TextMeshProUGUI text = go.GetComponentInChildren<TextMeshProUGUI>();
+			text.text = highscore.Time.ToString("F3", CultureInfo.InvariantCulture);
+		}
 	}
 }
