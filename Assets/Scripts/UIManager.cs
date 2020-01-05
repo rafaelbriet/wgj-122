@@ -110,11 +110,6 @@ public class UIManager : MonoBehaviour
 		endMenu.SetActive(false);
 	}
 
-	public void QuitGame()
-	{
-		Application.Quit();
-	}
-
 	private void UpdateHighscoreDisplay()
 	{
 		foreach (Transform t in highscoreTextParent.transform)
