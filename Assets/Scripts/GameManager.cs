@@ -93,6 +93,8 @@ public class GameManager : MonoBehaviour
 		{
 			runner.RaceTime = 0;
 			runner.HasFinishedRacing = false;
+			runner.rb.velocity = Vector3.zero;
+			runner.rb.angularVelocity = Vector3.zero;
 			runner.transform.position = new Vector3(0, 0, runner.transform.position.z);
 		}
 
