@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space) && GameManager.Instance.HasRaceStarted == true && runner.HasFinishedRacing == false)
+		if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) 
+			&& GameManager.Instance.HasRaceStarted == true && runner.HasFinishedRacing == false)
 		{
 			canRun = true;
 		}

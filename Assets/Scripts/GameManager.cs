@@ -72,11 +72,13 @@ public class GameManager : MonoBehaviour
 
 	public void StartGame()
 	{
+		Cursor.lockState = CursorLockMode.Locked;
 		StartCountdown = true;
 	}
 
 	public void EndGame()
 	{
+		Cursor.lockState = CursorLockMode.None;
 		StartCountdown = false;
 	}
 
